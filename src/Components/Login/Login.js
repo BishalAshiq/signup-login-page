@@ -8,8 +8,9 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const Login = () => {
   return (
     <div className="login-page">
-      <div className="login-input">
+      <form className="login-input">
       <TextField
+        style={{marginBottom: 10}}
         id="standard-email-input"
         label="Email or Username"
         type="email"
@@ -18,6 +19,7 @@ const Login = () => {
         className="text-input"
       /> <br/>
       <TextField
+        style={{marginBottom: 10}}
         id="standard-password-input"
         label="Password"
         type="password"
@@ -25,13 +27,13 @@ const Login = () => {
         variant="standard"
         className="text-input"
       />
-      </div>
+      </form>
       <br/>
       <div className="remember">
        <Checkbox {...label} />
        <h4>Remembered me</h4>
       </div>
-      <button className="login-button">Login</button>
+      <input type="submit" value="Login" className="login-button" />
     </div>
   );
 };

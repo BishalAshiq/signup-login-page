@@ -1,39 +1,71 @@
-import React from 'react';
+import React, {useState} from "react";
 import TextField from "@mui/material/TextField";
-import './Signup.css';
+import "./Signup.css";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+
 const Signup = () => {
-    return (
-        <div className="signup-page">
-        <div className="signup-input">
+  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
+  const [password, setPassword] = useState('');
+  
+  const auth = getAuth();
+  const handleEmailChange=(e)=>{
+    setEmail(e.target.value);
+  }
+  const handleUsernameChange=(e)=>{
+    setUserName(e.target.value);
+  }
+  const handlePasswordChange=(e)=>{
+    setPassword(e.target.value);
+  }
+
+  const handleSignup = (e) => {
+    console.log(email, userName, password);
+    e.preventDefault();
+  };
+
+
+  return (
+    <div className="signup-page">
+      <form className="signup-input" onClick={handleSignup}>
         <TextField
+          onBlur={handleEmailChange}
+          style={{ marginBottom: 10 }}
           id="standard-email-input"
-          label="Email or Username"
+          label="Email"
           type="email"
           autoComplete="current-email"
           variant="standard"
-          className="text-input"
-        /> <br/>
+          required
+        />{" "}
+        <br />
         <TextField
-          id="standard-email-input"
+          onBlur={handleUsernameChange}
+          style={{ marginBottom: 10 }}
+          id="standard-name-input"
           label="Username"
-          type="name"
-          autoComplete="current-name"
+          type="text"
+          autoComplete="current-text"
           variant="standard"
-          className="text-input"
-        /> <br/>
+        />{" "}
+        <br />
         <TextField
+          onBlur={handlePasswordChange}
+          style={{ marginBottom: 10 }}
           id="standard-password-input"
           label="Password"
           type="password"
           autoComplete="current-password"
           variant="standard"
-          className="text-input"
+          required
         />
-        </div>
-        <br/>
-        <button className="signup-button">Login</button>
-      </div>
-    );
+        <br />
+        <input type="submit" value="Signup" className="signup-button" />
+      </form>
+      <br />
+    </div>
+  );
 };
 
 export default Signup;

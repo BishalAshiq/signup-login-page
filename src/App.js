@@ -7,7 +7,7 @@ import Navigation from './Shared/Navigation/Navigation';
 function App() {
   return (
     <div className="App">
-       <Navigation></Navigation>
+       <Navigation/>
         <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

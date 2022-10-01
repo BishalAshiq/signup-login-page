@@ -12,3 +12,6 @@
     font-size: 18px;
     font-weight: 500;
 }
+.navlink:hover{
+ border-bottom: 2px solid rgb(17, 251, 251);
+}

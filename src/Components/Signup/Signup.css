@@ -8,6 +8,7 @@
     margin-right: 150px;
     margin-top: 50px;
 }
+
 .signup-button{
     background-color: rgb(1, 231, 231);
     color: rgb(255, 255, 255);
@@ -16,5 +17,6 @@
     cursor: pointer;
     font-size: 15px;
     border-radius: 20px;
-    margin-right: 220px;
+    margin-right: 70px;
+    margin-top: 10px;
 }
