@@ -1,19 +1,14 @@
-.login-page{
+.signup-page{
     background-color: rgb(69, 72, 72);
     color: rgb(172, 172, 172);
 }
-.login-input{
+.signup-input{
     background-color: rgb(69, 72, 72);
     color: rgb(172, 172, 172);
     margin-right: 150px;
     margin-top: 50px;
 }
-.remember{
-    display: flex;
-    justify-content: center;
-    margin-right: 180px;
-}
-.login-button{
+.signup-button{
     background-color: rgb(1, 231, 231);
     color: rgb(255, 255, 255);
     padding: 10px 40px;

@@ -3,8 +3,8 @@ import TextField from "@mui/material/TextField";
 import './Login.css';
 import Checkbox from '@mui/material/Checkbox';
 
-
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
 const Login = () => {
   return (
     <div className="login-page">
@@ -26,6 +26,7 @@ const Login = () => {
         className="text-input"
       />
       </div>
+      <br/>
       <div className="remember">
        <Checkbox {...label} />
        <h4>Remembered me</h4>
