@@ -1,0 +1,24 @@
+.login-page{
+    background-color: rgb(69, 72, 72);
+    color: rgb(172, 172, 172);
+    
+}
+.login-input{
+    background-color: rgb(69, 72, 72);
+    color: rgb(172, 172, 172);
+    float: left;
+}
+.remember{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-button{
+    background-color: rgb(1, 231, 231);
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    border: 0px solid rgb(1, 231, 231);
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 20px;
+}
