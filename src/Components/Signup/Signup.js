@@ -9,7 +9,7 @@ const Signup = () => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   
-  const auth = getAuth();
+ 
   const handleEmailChange=(e)=>{
     setEmail(e.target.value);
   }
